@@ -111,12 +111,6 @@ input:focus {
   outline: none;
 }
 
-@media (max-width: 600px) {
-  .input-group input {
-    width: 80%;
-  }
-}
-
 .btn {
   color: #181818;
   border: 0;
@@ -137,4 +131,45 @@ input:focus {
 .about-link {
   display: flex;
   justify-content: flex-end;
+}
+
+.note{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "open sans", "sans serif";
+}
+
+.note p{
+  font-family: "open sans", "sans serif";
+}
+
+.color-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue-box{
+  background-color: #197cc9;
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+}
+
+.pink-box{
+  background-color: #f27fa2;
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+}
+
+@media (max-width: 600px) {
+  .note{
+    flex-direction: column;
+  }
+
+  .input-group input {
+    width: 80%;
+  }
 }

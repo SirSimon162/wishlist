@@ -17,12 +17,13 @@ function WishListItem({ item, handleDelete }) {
       <Status version={version} />
       <Card>
         <div className="buttons">
-          <button className="doneButton" onClick={handleDone}>
+          <button className="doneButton" onClick={handleDone} title="Wish Fulfilled">
             <FiCheckCircle />
           </button>
           <button
             className="deleteButton"
             onClick={() => handleDelete(item.id)}
+            title="Delete Wish"
           >
             <FiXCircle />
           </button>

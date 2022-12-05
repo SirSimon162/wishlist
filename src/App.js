@@ -7,6 +7,7 @@ import WishData from "./data/WishData";
 import InputForm from "./components/InputForm";
 import AboutPage from "./pages/About";
 import AboutLink from "./components/AboutLink";
+import Instructions from "./components/Instructions";
 
 function App() {
   const [wish, setWish] = useState(WishData);
@@ -32,6 +33,7 @@ function App() {
             element={
               <>
                 <InputForm handleAdd={addWish} />
+                <Instructions/>
                 <WishList wish={wish} handleDelete={deleteWish} />
               </>
             }
