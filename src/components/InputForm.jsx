@@ -32,7 +32,7 @@ function InputForm({ handleAdd }) {
         <div className="input-group">
           <input
             type="text"
-            placeholder="review"
+            placeholder="Your Wish"
             onChange={handleTextChange}
             value={text}
           ></input>
